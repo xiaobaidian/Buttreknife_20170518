@@ -9,6 +9,24 @@
     tools:context="com.feicuiedu.buttreknife_20170518.MainActivity">
 
     <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文本"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文本"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文本"/>
+
+    <TextView
         android:id="@+id/tvShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,5 +36,17 @@
         android:id="@+id/btnShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="展示"/>
+        android:text="展示1"/>
+    <Button
+        android:id="@+id/btnShow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展示2"/>
+    <Button
+        android:id="@+id/btnShow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展示3"/>
+
+
 </LinearLayout>

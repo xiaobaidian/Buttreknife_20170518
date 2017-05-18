@@ -5,4 +5,10 @@
 2. 使用：
     1. 绑定视图：ButterKnife.bind(this);
     2. 绑定控件:@BindView(R.id.btnShow):绑定单个控件
-    3. 绑定资源：
+    3. 绑定资源：@BindColor等
+    4. 绑定视图列表：// 绑定视图列表
+                  @BindViews({R.id.tv1,R.id.tv2,R.id.tv3})
+                  List<TextView> mViewList;
+    5. 绑定监听：@OnClick(R.id.btn)、@OnCick({xxx,xxx,xx})
+                @OnItemClick()等
+    6. 绑定的重置:视图销毁的时候：unBinder.unbind();
