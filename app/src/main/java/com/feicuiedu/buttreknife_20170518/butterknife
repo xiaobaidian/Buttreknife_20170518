@@ -1,0 +1,8 @@
+1. 依赖
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+2. 使用：
+    1. 绑定视图：ButterKnife.bind(this);
+    2. 绑定控件:@BindView(R.id.btnShow):绑定单个控件
+    3. 绑定资源：
