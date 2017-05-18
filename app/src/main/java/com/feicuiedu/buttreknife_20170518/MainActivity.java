@@ -1,8 +1,8 @@
 package com.feicuiedu.buttreknife_20170518;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,8 +17,6 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.OnItemClick;
-import butterknife.OnItemLongClick;
 import butterknife.Unbinder;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     float dimen;
 
     // 绑定视图列表
-    @BindViews({R.id.tv1,R.id.tv2,R.id.tv3})
+    @BindViews({R.id.tv1, R.id.tv2, R.id.tv3})
     List<TextView> mViewList;
     private Unbinder mUnbinder;
 
@@ -74,14 +72,14 @@ public class MainActivity extends AppCompatActivity {
 //        ButterKnife.findById(view,R.id.zzz);
 
         // 对视图列表进行操作
-        ButterKnife.apply(mViewList,mAction);
+        ButterKnife.apply(mViewList, mAction);
     }
 
     // 创建Action，泛型就是视图列表的视图类型
     private ButterKnife.Action<TextView> mAction = new ButterKnife.Action<TextView>() {
         @Override
         public void apply(@NonNull TextView view, int index) {
-            view.setText("视图列表的文本:"+index);
+            view.setText("视图列表的文本:" + index);
         }
     };
 
@@ -96,9 +94,9 @@ public class MainActivity extends AppCompatActivity {
 //        mTextView.setTextColor(color);
 //    }
 
-    @OnClick({R.id.btnShow,R.id.btnShow1,R.id.btnShow2})
-    public void onClick(View view){
-        switch (view.getId()){
+    @OnClick({R.id.btnShow, R.id.btnShow1, R.id.btnShow2})
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.btnShow:
                 Toast.makeText(this, "展示1", Toast.LENGTH_SHORT).show();
                 break;

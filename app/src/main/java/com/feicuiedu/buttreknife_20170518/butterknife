@@ -12,3 +12,5 @@
     5. 绑定监听：@OnClick(R.id.btn)、@OnCick({xxx,xxx,xx})
                 @OnItemClick()等
     6. 绑定的重置:视图销毁的时候：unBinder.unbind();
+    7. Butterknife使用的插件：Butterknife zelezny
+        settings-->plugins-->搜索Butterknife zelezny
